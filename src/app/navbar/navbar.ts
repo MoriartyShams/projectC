@@ -21,8 +21,6 @@ export class Navbar {
 
 
    toggleMenu(event: Event) {
-    event.preventDefault();
-    event.stopPropagation();
     this.isMenuOpen = !this.isMenuOpen;
    }
  
