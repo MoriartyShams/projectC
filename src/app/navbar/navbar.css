@@ -1,0 +1,17 @@
+.c-navbar {
+  background-color: rgb(63, 78, 79);
+  padding: 2rem;
+  justify-content: left;
+}
+
+.c-navlinks {
+  display: flex;
+  list-style: none;
+
+  a,
+  img {
+    text-decoration: none;
+    color: rgb(220, 215, 201);
+    padding-right: 2rem;
+  }
+}

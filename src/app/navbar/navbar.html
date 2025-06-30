@@ -1,57 +1,15 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">
+<nav>
+  <div class="c-navbar">
+    <ul class="c-navlinks">
       <img
-        src="/images/icon-placeholder.webp"
+        src="images/icon-placeholder.webp"
         alt="icon"
-        width="30"
-        height="24"
+        height="30"
+        width="auto"
       />
-    </a>
-    <a class="navbar-brand" routerLink="/">C-Squad Photography</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            routerLink="/portfolio"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Portfolio
-          </a>
-        <ul class="dropdown-menu">
-           <li><button class="dropdown-item" (click)="addCategory('')">All</button></li>
-             @if (categories.length > 0){
-              @for (category of categories; track category)  {
-                 <li><button class="dropdown-item" (click)="addCategory(category)">{{category}}</button></li>
-              }
-             }
-          </ul>  
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact me</a>
-        </li>
-      </ul>
-    </div>
+      <li><a routerLink="/">C-Squad Photography</a></li>
+      <li><a routerLink="/portfolio">Portfolio</a></li>
+      <li><a routerLink="/contact">Contact us</a></li>
+    </ul>
   </div>
 </nav>
-
-
-
