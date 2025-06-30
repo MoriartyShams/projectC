@@ -30,5 +30,13 @@ export class Filtering {
   getCategory() {
     return this.category;
   }
+
+  filterByCategory(category: string): IPhoto[]{
+    if (category == "") {
+      return Photos;
+    } else {
+      return Photos.filter((val)=> val.category == category)
+    }
+  }
   constructor() { }
 }
