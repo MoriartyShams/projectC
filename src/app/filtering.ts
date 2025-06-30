@@ -30,6 +30,5 @@ export class Filtering {
   getCategory() {
     return this.category;
   }
-
   constructor() { }
 }
