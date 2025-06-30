@@ -1,18 +1,72 @@
 .c-navbar {
-  background-color: rgb(63, 78, 79);
+  background: linear-gradient(
+      rgba(220, 227, 235, 0.7),
+      rgba(174, 183, 194, 0.7)
+    ),
+    url("../../assets/images/camera2.jpg") center/cover no-repeat;
   padding: 2rem;
-  justify-content: left;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
 }
 
 .c-navlinks {
   display: flex;
+  gap: 0.6rem;
   list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 
-  a,
-  img {
+  a {
     text-decoration: none;
-    color: rgb(220, 215, 201);
-    padding-right: 2rem;
+    color: rgb(38, 46, 54);
+
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .c-navitem {
+    padding: 0.8rem;
+  }
+
+  .c-navitem:hover {
+    border: 1px solid rgb(38, 46, 54);
+  }
+
+  .nav-logo {
+    margin-right: auto;
+  }
+}
+
+.downarrow {
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+@media (max-width: 1000px) {
+  .c-navbar {
+    padding: 1rem;
+    min-height: 130px;
+  }
+
+  .c-navlinks img {
+    height: 50px;
+  }
+
+  .c-navlinks a {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (width < 740px) {
+  .c-navlinks {
+    flex-direction: column;
+  }
+
+  .c-navbar {
+    justify-content: center;
   }
 }
 
