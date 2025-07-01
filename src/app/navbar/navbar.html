@@ -1,20 +1,35 @@
 <nav>
   <div class="c-navbar">
     <ul class="c-navlinks">
-      <img src="images/icon-placeholder.webp" alt="icon" height="30" width="auto" />
-      <li><a routerLink="/">C-Squad Photography</a></li>
-      <li><a routerLink="/about">About us</a></li>
-       
-      <li class="dropdown">
-        <a routerLink="/portfolio"  (click)="toggleMenu($event)">Portfolio ▼</a>
+      <li class="nav-logo">
+        <a routerLink="/"
+          ><img
+            src="images/logo-blue-01.png"
+            alt="logo"
+            height="75"
+            width="auto"
+        /></a>
+      </li>
+      <li class="c-navitem"><a routerLink="/about">About us</a></li>
+
+      <li class="dropdown c-navitem">
+        <a routerLink="/portfolio" (click)="toggleMenu($event)"
+          >Portfolio <i class="fa-solid fa-chevron-down"></i
+        ></a>
         <ul class="dropdown-menu" [class.show]="isMenuOpen">
-          <li><button class="dropdown-item" (click)="addCategory('')">All</button></li>
+          <li>
+            <button class="dropdown-item" (click)="addCategory('')">All</button>
+          </li>
           @for (category of categories; track category) {
-            <li><button class="dropdown-item" (click)="addCategory(category)">{{category}}</button></li>
+          <li>
+            <button class="dropdown-item" (click)="addCategory(category)">
+              {{category}}
+            </button>
+          </li>
           }
         </ul>
       </li>
-      <li><a routerLink="/contact">Contact us</a></li>
+      <li class="c-navitem"><a routerLink="/contact">Contact us</a></li>
     </ul>
   </div>
 </nav>
