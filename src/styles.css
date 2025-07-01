@@ -1,4 +1,18 @@
-/* You can add global styles to this file, and also import other style files
-body {
-  
-} */
+:root {
+  --darkblue: rgb(38, 46, 54);
+  --cream: rgb(240, 236, 229);
+  --lightblue: rgb(220, 227, 235);
+}
+
+p,
+a {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h5 {
+  font-family: "Domine", serif !important;
+  font-weight: 500;
+}

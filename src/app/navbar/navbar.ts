@@ -12,24 +12,20 @@ import { Filtering } from '../filtering';
 export class Navbar {
   categories: string[] = [];
   isMenuOpen: boolean = false;
- 
-
 
   constructor(private filtering: Filtering, private router: Router) {
     this.categories = this.filtering.addCategoriesToNavbar();
   }
 
-
-   toggleMenu(event: Event) {
+  toggleMenu(event: Event) {
     this.isMenuOpen = !this.isMenuOpen;
-   }
- 
+  }
+
   addCategory(category: string) {
     this.filtering.setCategory(category);
     this.isMenuOpen = false;
   }
 
- 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
