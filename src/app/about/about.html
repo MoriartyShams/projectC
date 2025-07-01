@@ -52,12 +52,28 @@
     @for (val of review; track val.id) {
     <div class="card text-center mb-3" style="width: 18rem">
       <div class="card-body">
-        <h5 class="card-title"><b>{{ val.title }}</b></h5>
+        <h5 class="card-title"><b>"{{ val.title }}"</b></h5>
         <p class="card-text">{{ val.description }}</p>
         <p>From: {{ val.name }}</p>
-        <p>Rating: {{ val.rating }} / 5</p>
+        @if (val.rating == 5) {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p class="text-muted ms-1">Rating: {{val.rating}}</p>
+
+        } @else {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+        <p class="text-muted ms-1">Rating: {{val.rating}}</p>
+        }
       </div>
     </div>
+
     }
   </div>
 </div>
