@@ -1,5 +1,5 @@
 .c-navbar {
-   position: relative;
+  position: relative;
   z-index: 1000;
   background: linear-gradient(
       rgba(220, 227, 235, 0.7),
@@ -43,7 +43,6 @@
   }
 
   .dropdown-menu {
-    
     background-color: rgba(220, 227, 235, 0.7);
     z-index: 100 !important;
     border-radius: 0%;
@@ -72,7 +71,7 @@
   }
 }
 
-@media (width < 740px) {
+@media (width < 768px) {
   .c-navlinks {
     flex-direction: column;
   }

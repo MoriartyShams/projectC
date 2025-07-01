@@ -8,14 +8,16 @@
 }
 
 img {
+  width: 280px;
   margin-bottom: auto;
   margin-top: auto;
 }
 .p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: rgb(220, 227, 235);
   margin-bottom: auto;
   margin-top: auto;
+  line-height: 1.2rem;
 }
 
 .social-icons {
@@ -51,10 +53,14 @@ img {
   }
 
   .social-icons a {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .p {
     margin: 1rem 0;
+  }
+
+  img {
+    width: 200px;
   }
 }
