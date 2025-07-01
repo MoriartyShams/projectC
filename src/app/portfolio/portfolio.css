@@ -6,20 +6,50 @@
 
  
 }
+.row{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+margin: 2rem auto;
+max-width: 1200px;
+
+}
+
 .card {
   width:400px;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
 
-
+.main-cards{
+  padding: 0;
+}
 
 .card-img-top{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+
+@media (max-width: 768px)  {
+    .row{
+    grid-template-columns: repeat(1, 1fr);    
+    }
+
+}
+/* here is code for @media tablet size*/
+@media  (min-width:769px)  {
+    .row{
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+/* here is code for @media laptop/pc size*/
+@media (min-width: 1200px) {
+    .row{
+    grid-template-columns: repeat(3, 1fr);
+    }
 }
