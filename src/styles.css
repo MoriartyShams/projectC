@@ -2,17 +2,21 @@
   --darkblue: rgb(38, 46, 54);
   --cream: rgb(240, 236, 229);
   --lightblue: rgb(220, 227, 235);
+  --medblue: rgb(137, 157, 179);
 }
 
-p,
-a {
+body {
   font-family: "Lato", sans-serif !important;
-  font-weight: 400;
+  color: var(--darkblue);
 }
 
-h1,
-h2,
-h5 {
-  font-family: "Domine", serif !important;
-  font-weight: 500;
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--medblue);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
 }
