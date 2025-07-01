@@ -2,11 +2,32 @@
   <div class="row row-cols-3">
     @for (val of photos; track val.id) {
     <div>
-      <div class="card" style="width: 18rem">
+      <div class="card" (click)="openModal(val)" style="width: 18rem">
         <img src="images/{{val.imageUrl}}" class="card-img-top" alt="..." />
         <div class="card-body"></div>
       </div>
     </div>
     }
+  </div>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="MyModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">{{obj.name}}</h1>
+      </div>
+      <div class="modal-body">
+        <p>{{obj.description}}</p>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
   </div>
 </div>
