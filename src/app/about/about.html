@@ -49,31 +49,31 @@
 <div class="container review d-flex">
   <div class="steve">
     @for (val of review; track val.id) {
-    <div>
-      <div class="c-card text-center mb-3 shadow-sm" style="width: 18rem">
-        <div class="card-body">
-          <h4 class="c-card-title"><b>"{{ val.title }}"</b></h4>
-          <p class="c-card-text px-2">{{ val.description }}</p>
-          <p>From: {{ val.name }}</p>
-          @if (val.rating == 5) {
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <p class="text-muted ms-1">Rating: {{val.rating}}</p>
 
-          } @else {
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half"></i>
-          <p class="text-muted ms-1">Rating: {{val.rating}}</p>
-          }
-        </div>
+    <div class="c-card text-center mb-3 shadow-sm" style="width: 18rem">
+      <div class="card-body">
+        <h4 class="c-card-title"><b>"{{ val.title }}"</b></h4>
+        <p class="c-card-text px-2">{{ val.description }}</p>
+        <p>From: {{ val.name }}</p>
+        @if (val.rating == 5) {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <p class="text-muted ms-1">Rating: {{val.rating}}</p>
+
+        } @else {
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+        <p class="text-muted ms-1">Rating: {{val.rating}}</p>
+        }
       </div>
     </div>
+
     }
   </div>
 </div>
