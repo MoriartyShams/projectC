@@ -1,4 +1,30 @@
 /* About us, first Half */
 
+.container {
+  text-align: center;
+}
 
+.about1 {
+  display: flex;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.about2 {
+  display: flex;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+}
+
+#context {
+  width: 80%;
+  height: 80%;
+}
+
+/* ========================== */
 /* Testimonials, second Half */
