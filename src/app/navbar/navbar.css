@@ -2,8 +2,9 @@
   position: relative;
   z-index: 1000;
   background: linear-gradient(
+      to right,
       rgba(220, 227, 235, 0.7),
-      rgba(174, 183, 194, 0.7)
+      rgba(111, 120, 133, 0.7)
     ),
     url("../../assets/images/camera2.jpg") center/cover no-repeat;
 
@@ -27,7 +28,7 @@
     color: rgb(38, 46, 54);
 
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 800;
     text-transform: uppercase;
   }
   .c-navitem {
