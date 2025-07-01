@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Photos } from '../photos';
 import { IPhoto } from '../iphoto';
 import { Filtering } from '../filtering';
@@ -6,25 +6,27 @@ import { Modal } from 'bootstrap';
 
 @Component({
   selector: 'app-portfolio',
+  standalone: true,
   imports: [],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.css',
 })
-export class Portfolio {
+export class Portfolio implements AfterViewInit {
   photos: IPhoto[] = Photos;
   category: string = '';
   obj: IPhoto = {} as IPhoto;
-  element: any;
-  myModal: any;
+  myModal: Modal | undefined;
 
   openModal(item: IPhoto) {
     this.obj = item;
-    this.myModal.show();
+    this.myModal?.show();
   }
 
   ngAfterViewInit() {
-    this.element = document.getElementById('MyModal') as HTMLElement;
-    this.myModal = new Modal(this.element);
+    const modalElement = document.getElementById('MyModal');
+    if (modalElement) {
+      this.myModal = new Modal(modalElement);
+    }
   }
 
   constructor(private filtering: Filtering) {}
