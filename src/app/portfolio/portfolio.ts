@@ -11,13 +11,12 @@ import { Filtering } from '../filtering';
 })
 export class Portfolio {
   photos: IPhoto[] = Photos;
-  category: string = "";
+  category: string = '';
 
+  constructor(private filtering: Filtering) {}
 
-  constructor(private filtering: Filtering) { }
-  
   ngDoCheck(): void {
     this.category = this.filtering.getCategory();
-    this.photos = this.filtering.filterByCategory(this.category)
+    this.photos = this.filtering.filterByCategory(this.category);
   }
 }
