@@ -7,11 +7,12 @@
 .carousel-header {
   font-size: 2rem;
   text-shadow: 5px 5px 15px var(--darkblue);
+  text-transform: uppercase;
 }
 
 .carousel-copy {
   font-size: 1.1rem;
-  text-transform: uppercase;
+
   text-shadow: 5px 5px 15px var(--darkblue);
 }
 
