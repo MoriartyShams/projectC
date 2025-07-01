@@ -1,54 +1,62 @@
 <!-- About us,  Bio -->
-
 <div class="container">
-  <div class="about1">
-    <div class="image1" id="pictures">
-      <img src="images/about1.jpg" alt="about1" />
-    </div>
-    <br />
-    <div class="text1" id="context">
-      <p>
-        Meet C-Squad Photography – Capturing Life Through a Bold, Feminine Lens
-        C-Squad Photography is a dynamic trio of talented female photographers
-        united by a shared passion for storytelling through imagery. With
-        diverse backgrounds in portrait, event, and artistic photography, Jade
-        Carter, Naomi Reyes, and Priya Kapoor bring creativity, precision, and a
-        fresh perspective to every project.
-      </p>
-    </div>
-    <br />
-  </div>
-  <div class="about2">
-    <div class="text2" id="context">
-      <p>
-        Jade thrives in dynamic environments, whether it’s a high-fashion
-        editorial or an urban street shoot. Naomi specializes in raw, candid
-        moments—think tearful vows at weddings or unguarded laughter between
-        loved ones. <br />
-        And Priya brings an architectural eye to every shot, transforming
-        ordinary scenes into striking visual narratives. Together, they’re
-        C-Squad — a dream team that balances technical precision with heart.
-        Whether it’s an intimate wedding, a high-energy brand shoot, or a
-        striking editorial, C-Squad blends technical expertise with an intuitive
-        eye for emotion and composition. Their collaborative approach ensures
-        each client’s vision is brought to life with authenticity and flair.
-      </p>
-    </div>
-    <br />
-    <div class="image2" id="pictures">
-      <img src="images/about2.jpg" alt="about2" />
+  <h1 class="fw-bold mt-5 text-center">About us</h1>
+  <div class="container about d-flex m">
+    <div class="row p-3">
+      <div class="about-image col-6" id="pictures">
+        <img src="images/about1.jpg" alt="about1" />
+      </div>
+
+      <div class="col-6" id="context">
+        <p>
+          Meet C-Squad Photography – Capturing Life Through a Bold, Feminine
+          Lens C-Squad Photography is a dynamic trio of talented female
+          photographers united by a shared passion for storytelling through
+          imagery. With diverse backgrounds in portrait, event, and artistic
+          photography, Jade Carter, Naomi Cruz, and Priya Carlson bring
+          creativity, precision, and a fresh perspective to every project.
+        </p>
+      </div>
+
+      <div class="row p-3">
+        <div class="col-6" id="context">
+          <p>
+            Jade thrives in dynamic environments, whether it’s a high-fashion
+            editorial or an urban street shoot. Naomi specializes in raw, candid
+            moments—think tearful vows at weddings or unguarded laughter between
+            loved ones. <br />
+            And Priya brings an architectural eye to every shot, transforming
+            ordinary scenes into striking visual narratives. Together, they’re
+            C-Squad — a dream team that balances technical precision with heart.
+            Whether it’s an intimate wedding, a high-energy brand shoot, or a
+            striking editorial, C-Squad blends technical expertise with an
+            intuitive eye for emotion and composition. Their collaborative
+            approach ensures each client’s vision is brought to life with
+            authenticity and flair.
+          </p>
+        </div>
+        <br />
+        <div class="about-image col-6" id="pictures">
+          <img src="images/about2.jpg" alt="about2" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
 <!-- Reviews, use Stars, simple -->
 
 <div class="review">
-  <div class="card text-center mb-3" style="width: 18rem">
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">
-        With supporting text below as a natural lead-in to additional content.
-      </p>
+  <div class="row row-cols-2">
+    @for (val of review; track val.id) {
+    <div class="card text-center mb-3" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title"><b>{{ val.title }}</b></h5>
+        <p class="card-text">{{ val.description }}</p>
+        <p>From: {{ val.name }}</p>
+        <p>Rating: {{ val.rating }} / 5</p>
+      </div>
     </div>
+    }
   </div>
 </div>

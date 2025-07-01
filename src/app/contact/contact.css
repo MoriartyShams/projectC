@@ -1,11 +1,24 @@
-h3 {
-  font-size: bold;
+input,
+textarea {
+  border: 1px solid var(--darkblue);
+  background-color: rgba(220, 227, 235, 0.3);
+  width: 100%;
+  padding: 0.5rem;
 }
 
-p {
-  font-size: bold;
+label {
+  text-align: left;
 }
 
-.formular {
-  text-align: center;
+.submit-button {
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid var(--darkblue);
+  text-transform: uppercase;
+  color: var(--darkblue);
+  background-color: white;
+
+  &:hover {
+    color: var(--medblue);
+    border: 1px solid var(--medblue);
+  }
 }
