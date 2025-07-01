@@ -6,14 +6,14 @@
 
 .carousel-header {
   font-size: 2rem;
-  text-shadow: 5px 5px 15px var(--darkblue);
+  text-shadow: 5px 5px 8px var(--darkblue);
   text-transform: uppercase;
 }
 
 .carousel-copy {
   font-size: 1.1rem;
 
-  text-shadow: 5px 5px 15px var(--darkblue);
+  text-shadow: 5px 5px 8px var(--darkblue);
 }
 
 .portfolio-button {
@@ -24,8 +24,8 @@
   background-color: white;
 
   &:hover {
-    color: var(--medblue);
-    border: 1px solid var(--medblue);
+    color: white;
+    background-color: var(--darkblue);
   }
 }
 
