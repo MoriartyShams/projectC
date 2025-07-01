@@ -10,13 +10,11 @@ import { Filtering } from '../filtering';
 })
 export class Navbar {
   categories: string[] = [];
- 
-
 
   constructor(private filtering: Filtering) {
     this.categories = this.filtering.addCategoriesToNavbar();
   }
   addCategory(category: string) {
-    this.filtering.setCategory(category)
+    this.filtering.setCategory(category);
   }
 }

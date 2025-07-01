@@ -4,6 +4,7 @@
       rgba(174, 183, 194, 0.7)
     ),
     url("../../assets/images/camera2.jpg") center/cover no-repeat;
+
   padding: 2rem;
   min-height: 150px;
   display: flex;
@@ -11,6 +12,7 @@
 }
 
 .c-navlinks {
+  backdrop-filter: blur(2px) brightness(100%);
   display: flex;
   gap: 0.6rem;
   list-style: none;
