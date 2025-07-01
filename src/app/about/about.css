@@ -1,7 +1,54 @@
 /* About us, first Half */
-img {
+/* img {
   width: 100%;
+} */
+
+.about-text {
+  width: 73%;
+  background-color: rgb(255, 255, 255, 0.7);
+  border: 1px solid var(--darkblue);
+  backdrop-filter: blur(3px);
 }
+
+.about1 {
+  position: relative;
+  display: flex;
+
+  img {
+    width: 70%;
+  }
+}
+
+.text1 {
+  position: absolute;
+  top: 27%;
+  right: 0;
+}
+
+.about-us-2 {
+  width: 100%;
+  background-color: var(--lightblue);
+}
+
+.about2 {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+
+  img {
+    width: 70%;
+  }
+}
+
+.text2 {
+  position: absolute;
+  top: 27%;
+  left: 0;
+  width: 70%;
+}
+
+/* ========================== */
+/* Testimonials, second Half */
 
 .review {
   color: var(--darkblue);
@@ -22,6 +69,8 @@ img {
 .c-card {
   border: 1px solid var(--darkblue);
   padding: 2rem;
+  background-color: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
 }
 
 .c-card-title {
@@ -30,9 +79,6 @@ img {
   font-size: 1.3rem;
 }
 
-/* ========================== */
-/* Testimonials, second Half */
-
 /* Media Queries for whole page */
 @media (width < 1400px) {
   .steve {
@@ -40,14 +86,54 @@ img {
   }
 }
 
-@media (width < 1000px) {
-  .steve {
-    grid-template-columns: repeat(2, 1fr);
+@media (width < 1200px) {
+  .text1,
+  .text2 {
+    position: absolute;
+    top: 15%;
+  }
+
+  .about-us-2 {
+    min-height: 556px;
   }
 }
 
-@media (width < 750px) {
+@media (width < 992px) {
+  .steve {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-us-1 {
+    min-height: 650px;
+  }
+
+  .about-us-2 {
+    min-height: 690px;
+  }
+}
+
+@media (width < 768px) {
   .steve {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-text {
+    width: 100% !important;
+    position: static !important;
+    margin-top: 20px;
+  }
+
+  .about1,
+  .about2 {
+    display: block !important;
+  }
+
+  .about1 img,
+  .about2 img {
+    width: 100%;
+  }
+
+  .text2 {
+    margin-bottom: 20px;
   }
 }

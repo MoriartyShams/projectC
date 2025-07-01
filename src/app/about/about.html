@@ -1,5 +1,5 @@
 <!-- About us,  Bio -->
-<div class="container">
+<!-- <div class="container">
   <h1 class="fw-bold mt-5 text-center">About us</h1>
   <div class="container about d-flex mt-3">
     <div class="row p-3 m-2">
@@ -43,37 +43,80 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<div class="container about-us-1 py-2">
+  <h1 class="fw-bold mt-5 text-center mb-5">About us</h1>
+
+  <div class="about1 m-3 my-5">
+    <img src="images/about1.jpg" alt="about1" id="about-img1" />
+    <div class="about-text text1 p-4">
+      <h2>
+        Meet C-Squad Photography – Capturing Life Through a Bold, Feminine Lens
+      </h2>
+      <p class="pt-5">
+        C-Squad Photography is a dynamic trio of talented female photographers
+        united by a shared passion for storytelling through imagery. With
+        diverse backgrounds in portrait, event, and artistic photography, Jade
+        Carter, Naomi Cruz, and Priya Carlson bring creativity, precision, and a
+        fresh perspective to every project.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid about-us-2 py-2">
+  <div class="container">
+    <div class="about2 m-3 my-5">
+      <img src="images/about2.jpg" alt="about2" id="about-img2" />
+      <p class="about-text text2 p-5 p-4">
+        Jade thrives in dynamic environments, whether it’s a high-fashion
+        editorial or an urban street shoot. Naomi specializes in raw, candid
+        moments—think tearful vows at weddings or unguarded laughter between
+        loved ones. <br />
+        And Priya brings an architectural eye to every shot, transforming
+        ordinary scenes into striking visual narratives. Together, they’re
+        C-Squad — a dream team that balances technical precision with heart.
+        Whether it’s an intimate wedding, a high-energy brand shoot, or a
+        striking editorial, C-Squad blends technical expertise with an intuitive
+        eye for emotion and composition. Their collaborative approach ensures
+        each client’s vision is brought to life with authenticity and flair.
+      </p>
+    </div>
+  </div>
 </div>
 
 <!-- Reviews, use Stars, simple -->
-<div class="container review d-flex">
-  <div class="steve">
-    @for (val of review; track val.id) {
+<section class="review-section mt-3">
+  <div class="container review d-flex">
+    <div class="steve mt-5">
+      @for (val of review; track val.id) {
 
-    <div class="c-card text-center mb-3 shadow-sm" style="width: 18rem">
-      <div class="card-body">
-        <h4 class="c-card-title"><b>"{{ val.title }}"</b></h4>
-        <p class="c-card-text px-2">{{ val.description }}</p>
-        <p>From: {{ val.name }}</p>
-        @if (val.rating == 5) {
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <p class="text-muted ms-1">Rating: {{val.rating}}</p>
+      <div class="c-card text-center mb-3 shadow-sm" style="width: 18rem">
+        <div class="card-body">
+          <h4 class="c-card-title"><b>"{{ val.title }}"</b></h4>
+          <p class="c-card-text px-2">{{ val.description }}</p>
+          <p>From: {{ val.name }}</p>
+          @if (val.rating == 5) {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <p class="text-muted ms-1">Rating: {{val.rating}}</p>
 
-        } @else {
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star-half"></i>
-        <p class="text-muted ms-1">Rating: {{val.rating}}</p>
-        }
+          } @else {
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half"></i>
+          <p class="text-muted ms-1">Rating: {{val.rating}}</p>
+          }
+        </div>
       </div>
-    </div>
 
-    }
+      }
+    </div>
   </div>
-</div>
+</section>
