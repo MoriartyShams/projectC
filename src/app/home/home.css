@@ -6,18 +6,38 @@
 
 .carousel-header {
   font-size: 2rem;
-  text-shadow: 3px 3px 8px --darkblue;
+  text-shadow: 5px 5px 15px var(--darkblue);
 }
 
 .carousel-copy {
   font-size: 1.1rem;
   text-transform: uppercase;
-  text-shadow: 3px 3px 8px --darkblue;
+  text-shadow: 5px 5px 15px var(--darkblue);
+}
+
+.portfolio-button {
+  padding: 1rem 2rem 1rem 2rem;
+  border: 1px solid var(--darkblue);
+  text-transform: uppercase;
+  color: var(--darkblue);
+  background-color: white;
+
+  &:hover {
+    color: var(--medblue);
+    border: 1px solid var(--medblue);
+  }
 }
 
 /* Smooth transitions */
 .carousel-item {
   transition: transform 1s ease-in-out;
+}
+
+/* cards */
+.c-card-title {
+  color: var(--medblue);
+  text-transform: uppercase;
+  font-size: 1.3rem;
 }
 
 /* Card hover effects */

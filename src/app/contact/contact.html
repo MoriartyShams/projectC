@@ -1,18 +1,20 @@
-<div class="formular">
-  <h2>Contact us</h2>
+<div class="container my-5 py-4">
+  <div class="row">
+    <h1 class="fw-bold mt-5 text-center">Contact us</h1>
+    <div class="formular col mb-5">
+      <form id="contact">
+        <br />
+        <label for="text">Name:</label><br />
+        <input type="text" id="name" class="p-2 mb-3" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" class="p-2 mb-3" /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" rows="7" cols="51" class="p-2 mb-3"> </textarea>
 
-  <form id="contact">
-    <br />
-    <p>Name:</p>
-    <input type="text" id="name" />
-    <p>E-Mail:</p>
-    <input type="email" id="email" />
-    <p>Message:</p>
-    <textarea id="message" rows="7" cols="51"> </textarea>
+        <br />
 
-    <br />
-    <br />
-
-    <button type="submit">Submit</button>
-  </form>
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </div>
 </div>
