@@ -1,55 +1,63 @@
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-
- 
 }
-.row{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
-margin: 2rem auto;
-
-
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem auto;
 }
 
 .card {
-  width:400px;
+  width: 400px;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-.main-cards{
+.card-overlay {
+  position: absolute;
+  background-color: rgb(38, 46, 54, 0.6);
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.card-overlay:hover {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  backdrop-filter: blur(2px) brightness(100%);
+}
+
+.main-cards {
   padding: 0;
 }
 
-.card-img-top{
+.card-img-top {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-
-@media (max-width: 768px)  {
-    .row{
-    grid-template-columns: repeat(1, 1fr);    
-    }
-
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* here is code for @media tablet size*/
-@media  (min-width:769px)  {
-    .row{
+@media (min-width: 769px) {
+  .row {
     grid-template-columns: repeat(2, 1fr);
-    }
-
+  }
 }
 /* here is code for @media laptop/pc size*/
 @media (min-width: 1200px) {
-    .row{
+  .row {
     grid-template-columns: repeat(3, 1fr);
-    }
+  }
 }
