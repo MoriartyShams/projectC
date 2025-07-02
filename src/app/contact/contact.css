@@ -1,4 +1,8 @@
 /* Form styling */
+.placeholder {
+  height: 180px;
+}
+
 .contact-form {
   width: 80%;
   background-color: rgb(255, 255, 255, 0.8);
@@ -113,5 +117,9 @@ label {
 
   .contact img {
     width: 100%;
+  }
+
+  .placeholder {
+    height: 273px;
   }
 }

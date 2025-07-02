@@ -1,7 +1,7 @@
 /* About us, first Half */
-/* img {
-  width: 100%;
-} */
+.placeholder {
+  height: 180px;
+}
 
 .about-text {
   width: 73%;
@@ -135,5 +135,9 @@
 
   .text2 {
     margin-bottom: 20px;
+  }
+
+  .placeholder {
+    height: 273px;
   }
 }

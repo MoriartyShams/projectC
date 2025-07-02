@@ -1,3 +1,7 @@
+.placeholder {
+  height: 180px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -18,12 +22,12 @@
   align-items: center;
   position: relative;
   cursor: pointer;
-   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .card:hover {
-  transform: translateY(-10px) scale(1.02); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-overlay {
@@ -39,7 +43,6 @@
   opacity: 1;
   transition: all 0.5s ease-in-out;
   backdrop-filter: blur(2px) brightness(100%);
-  
 }
 
 .main-cards {
@@ -55,6 +58,10 @@
 @media (max-width: 768px) {
   .row {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .placeholder {
+    height: 273px;
   }
 }
 /* here is code for @media tablet size*/

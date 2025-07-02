@@ -1,3 +1,7 @@
+.placeholder {
+  height: 180px;
+}
+
 .carousel-caption {
   bottom: 25%;
   backdrop-filter: blur(2px);
@@ -93,7 +97,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .carousel-item img {
-    height: 60vh;
+    height: 60%;
   }
 
   .carousel-caption h5 {
@@ -102,5 +106,8 @@
 
   .carousel-caption p {
     font-size: 0.9rem;
+  }
+  .placeholder {
+    height: 273px;
   }
 }
