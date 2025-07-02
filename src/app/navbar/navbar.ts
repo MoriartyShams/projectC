@@ -34,3 +34,41 @@ export class Navbar {
     }
   }
 }
+
+// let prevScrollpos = window.pageYOffset;
+
+// window.onscroll = function () {
+//   let currentScrollPos = window.pageYOffset;
+//   let navbar = document.querySelector('.navbar') as HTMLElement;
+//   let isMobileView =
+//     window.getComputedStyle(
+//       document.querySelector('.c-navlinks') as HTMLElement
+//     ).flexDirection === 'column';
+
+//   if (prevScrollpos > currentScrollPos) {
+//     navbar.style.top = '0';
+//   } else {
+//     navbar.style.top = '-50px';
+//   }
+//   prevScrollpos = currentScrollPos;
+// };
+
+document.addEventListener('DOMContentLoaded', () => {
+  let prevScrollpos = window.pageYOffset;
+  console.log(prevScrollpos);
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    console.log(currentScrollPos);
+    let navbar = document.querySelector('.navbar-container') as HTMLElement;
+    let isMobileView =
+      window.getComputedStyle(
+        document.querySelector('.navbar-container') as HTMLElement
+      ).flexDirection === 'column';
+    if (prevScrollpos > currentScrollPos) {
+      navbar.style.top = '0';
+    } else {
+      navbar.style.top = isMobileView ? '-9rem' : '-7rem';
+    }
+    prevScrollpos = currentScrollPos;
+  };
+});
